@@ -111,7 +111,11 @@
 })();
 require.register("initialize", function(exports, require, module) {
 $(document).ready(function() {
-  return $('.HeaderSection').vide('video_bg.mp4');
+  $('.HeaderSection').vide('video_bg.mp4');
+  return $('.CustomersSection-slider').slick({
+    arrows: false,
+    fade: true
+  });
 });
 });
 

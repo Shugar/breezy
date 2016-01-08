@@ -1,3 +1,358 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-top: -10px\9; /*lte IE 8*/
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -45px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+/* line 1, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+.CustomersSection {
+  background-color: #45474D;
+  color: #ffffff;
+  padding: 60px 0; }
+  /* line 6, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection .container {
+    text-align: center; }
+  /* line 10, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection-title {
+    font-size: 39px;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto; }
+  /* line 17, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection-subtitle {
+    margin-top: 5px; }
+  /* line 21, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection-button {
+    margin-top: 25px;
+    color: #fff !important; }
+  /* line 26, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection-slider {
+    margin-top: 25px; }
+  /* line 30, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection-sliderItem {
+    outline: none; }
+  /* line 34, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection-image {
+    padding: 30px 0; }
+  /* line 38, /Users/tumasov/Developer/brunch-with-es6/app/styles/customers.scss */
+  .CustomersSection-image img {
+    margin: 0 auto; }
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
@@ -549,32 +904,32 @@ table {
 
 /* line 1, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
 .WhySection {
-  padding: 120px 0; }
+  padding: 80px 0 50px 0; }
   /* line 4, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-title {
-    font-size: 39px;
     text-align: center;
-    font-weight: 100; }
+    font-weight: 100;
+    font-size: 39px; }
   /* line 10, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-hr {
-    height: 2px;
-    width: 80px;
-    background-color: #00aeff;
     margin: 0 auto;
-    margin-top: 25px; }
+    margin-top: 25px;
+    width: 80px;
+    height: 2px;
+    background-color: #00aeff; }
   /* line 18, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-text {
-    font-size: 16px;
     margin-top: 30px;
-    margin-bottom: 50px;
-    font-weight: 300;
+    margin-bottom: 100px;
     color: #777;
-    text-align: center; }
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px; }
   /* line 27, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-list, .WhySection-nexus {
     display: inline-block;
-    vertical-align: top;
-    width: 33.33%; }
+    width: 33.33%;
+    vertical-align: top; }
   /* line 34, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-nexus > img {
     width: 100%; }
@@ -582,28 +937,44 @@ table {
   .WhySection-listItem {
     margin-bottom: 60px; }
   /* line 42, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  .WhySection-left {
+    text-align: right; }
+  /* line 46, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  .WhySection-left .WhySection-listTextTitle {
+    padding-left: 10px; }
+  /* line 50, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  .WhySection-right .WhySection-listTextTitle {
+    padding-right: 20px; }
+  /* line 54, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-listTextTitle {
+    font-weight: 300;
     font-size: 28px;
-    font-weight: 300; }
-  /* line 47, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+    line-height: 32px; }
+  /* line 60, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-listTextText {
     margin-top: 25px;
-    font-size: 16px;
-    font-weight: 300;
     color: #777;
+    font-weight: 300;
+    font-size: 16px;
     line-height: 1.6; }
-  /* line 55, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  /* line 68, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-listImage, .WhySection-listText {
     display: inline-block;
     vertical-align: top; }
-  /* line 61, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  /* line 74, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-listImage {
+    width: 20%;
     text-align: right; }
-  /* line 65, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  /* line 79, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  .WhySection-right .WhySection-listImage {
+    text-align: left; }
+  /* line 83, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-listText {
     width: 80%; }
-  /* line 69, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
+  /* line 87, /Users/tumasov/Developer/brunch-with-es6/app/styles/_why.scss */
   .WhySection-icon {
+    margin-top: 8px;
+    color: #777;
     font-size: 48px; }
 
 /* line 1, /Users/tumasov/Developer/brunch-with-es6/app/styles/_solutionsSection.scss */
