@@ -112,9 +112,12 @@
 require.register("initialize", function(exports, require, module) {
 $(document).ready(function() {
   $('.HeaderSection').vide('video_bg.mp4');
-  return $('.CustomersSection-slider').slick({
+  $('.CustomersSection-slider').slick({
     arrows: false,
     fade: true
+  });
+  return $(".Header").sticky({
+    topSpacing: 0
   });
 });
 });
