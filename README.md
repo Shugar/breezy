@@ -14,13 +14,21 @@ npm install -g brunch
 
 `npm install -g bower`
 
-# Step 2: Install project plugins
+# Step 2: Git clone
+To clone this repository you need:
+```
+git clone https://github.com/Shugar/breezy breezy-mainpage
+```
+
+# Step 3: Install project plugins
 To install npm & bower plugins you need put in terminal following commands:
 ```
+cd breezy-mainpage //go to our folder
 npm install
 bower install
 ```
-# Step 3: Serve/Build app
+
+# Step 4: Serve/Build app
 
 To serve your app you need go to your project folder and put in terminal following commands like
 ```
