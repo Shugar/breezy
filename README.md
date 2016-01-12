@@ -22,8 +22,11 @@ bower install
 ```
 # Step 3: Serve/Build app
 
-To serve your app you need go to your project folder and put in terminal following commands like `brunch w -s` 
+To serve your app you need go to your project folder and put in terminal following commands like
+```brunch w -s```
 
-To build your app to static files without `--watch` you need `brunch build`
+To build your app to static files without `--watch` you need
+```brunch build```
 
-To build app to production version (minified code and etc) — `brunch build -p`
+To build app to production version (minified code and etc) —
+```brunch build -p```
