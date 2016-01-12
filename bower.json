@@ -1,0 +1,14 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "main": "public/app.js",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "vide": "~0.4.1",
+    "slick-carousel": "~1.5.9",
+    "scrollreveal": "~3.0.6",
+    "Headhesive.js": "headhesive#~1.2.4",
+    "wow": "wowjs#~1.1.2"
+  },
+  "overrides": {}
+}

@@ -1,0 +1,124 @@
+.HeaderSection {
+    height: calc(100vh - 55px);
+    min-height: 650px;
+    position: relative;
+
+    .container {
+        text-align: center;
+    }
+
+    &-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 174, 255, 0.7);
+    }
+
+    &-logo {
+        background: url('../images/logo-big.svg') no-repeat center center;
+        background-size: contain;
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    &-slogan {
+        color: #fff;
+        line-height: 1.25;
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.25);
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        max-width: 530px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    &-buttons {
+        margin-top: 50px;
+    }
+
+    &-buttonsItem,
+    &-buttonsIcon,
+    &-buttonsText {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &-buttonsItem {
+        background: rgba(255,255,255,0.85);
+        padding: 15px 30px 14px 25px;
+        border-radius: 100px;
+        margin: 0 4px;
+        transition: background 0.4s ease;
+        position: relative;
+    }
+
+    &-buttonsItem:hover {
+        background: rgba(255,255,255,1);
+    }
+
+    &-buttonsItem > a {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &-buttonsItem:last-child {
+        color: #669900;
+    }
+
+    &-buttonsIcon {
+        margin-right: 10px;
+    }
+
+    &-buttonsIcon > img {
+        max-height: 32px;
+    }
+
+    &-buttonsTextTitle {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    &-buttonsTextSubtitle {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .HeaderSection {
+        min-height: 750px;
+
+        &-slogan {
+            font-size: 50px;
+            text-shadow: none;
+        }
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .HeaderSection {
+
+        min-height: 650px;
+
+        &-logo {
+            height: 160px;
+        }
+
+        &-slogan {
+            font-size: 28px;
+            text-shadow: none;
+        }
+
+        &-buttonsItem:last-child {
+            margin-top: 15px;
+        }
+    }
+}

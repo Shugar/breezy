@@ -1,0 +1,44 @@
+doctype html
+head
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  title Secure Cloud Printing and Mobile Printing for Enterprise | Breezy
+  meta(name="viewport" content="width=device-width")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css")
+  link(rel="stylesheet" href="stylesheets/app.css")
+
+  link(rel="icon" href="images/favicon.png")
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('waypoints');
+    require('initialize');
+
+    $(document).ready(function(){
+      var wow = new WOW({
+        mobile: false,
+      });
+
+      wow.init();
+    });
+
+body
+  include _includes/header.static.jade
+  include _includes/headerSection.static.jade
+  include _includes/whySection.static.jade
+  include _includes/solutionsSection.static.jade
+  include _includes/customersSection.static.jade
+  include _includes/partnersSection.static.jade
+  include _includes/footer.static.jade
+
+  //- .Modal
+  //-   .Modal-container
+  //-     .Modal-title
+  //-       | Try Breezy
+  //-     form
+  //-       input(type='text' placeholder="Name")
+  //-       input(type='text' placeholder="E-mail")
+  //-     .Modal-submit.buttonControl
+  //-       | SEND A PRINT JOB

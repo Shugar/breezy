@@ -1,0 +1,130 @@
+.SolutionsSection {
+	padding: 120px 0;
+	font-weight: lighter;
+	background: #f8f8f8;
+
+	&-title {
+		font-size: 39px;
+		font-weight: lighter;
+		color: #444;
+	}
+
+	&-hr {
+	    height: 2px;
+	    width: 80px;
+	    margin-top: 30px;
+	    background-color: #00aeff;
+	}
+
+	&-listItem {
+		display: inline-block;
+		margin-top: 25px;
+		vertical-align: top;
+		width: 100%;
+		max-width: 33.33%;
+		padding-right: 20px;
+	}
+
+	&-listIcon {
+		margin-top: 20px;
+		color: #00aeff;
+	}
+
+	&-listTitle {
+		color: #00aeff;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+
+	&-listText {
+		font-size: 15px;
+	    padding-right: 10px;
+		margin-top: 10px;
+		line-height: 25px;
+	}
+
+	&-listButton {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 0;
+		background-color: #39b3d7;
+	    border-color: #269abc;
+		color: #fff;
+		font-weight: normal;
+		text-align: center;
+		border: 1px solid transparent;
+		padding: 6px 12px;
+		font-size: 14px;
+		border-radius: 4px;
+		user-select: none;
+		margin-top: 25px;
+	}
+
+	&-listButton > a {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1020px) {
+	.SolutionsSection {
+		&-listItem {
+			max-width: 50%;
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.SolutionsSection {
+		padding: 70px 0;
+
+		&-title {
+			text-align: center;
+		}
+
+		&-hr {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&-listItem {
+			max-width: 100%;
+			text-align: center;
+			padding-right: 0;
+			margin-top: 50px;
+		}
+
+		&-listText {
+			padding-right: 0;
+		}
+
+		&-listIcon {
+			font-size: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.SolutionsSection {
+		&-title {
+			font-size: 28px;
+		}
+
+		&-listTitle {
+			font-size: 18px;
+		}
+
+		&-listText {
+			font-size: 14px;
+		}
+
+		&-listIcon {
+			font-size: 40px;
+		}
+	}
+}

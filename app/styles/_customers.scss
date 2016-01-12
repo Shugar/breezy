@@ -1,0 +1,87 @@
+.CustomersSection {
+	background-color: #45474D;
+	color: #ffffff;
+	padding: 60px 0;
+
+	.container {
+		text-align: center;
+		overflow: initial;
+	}
+
+	&-title {
+		font-size: 39px;
+		font-weight: 300;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	&-subtitle {
+		margin-top: 5px;
+	}
+
+	&-button {
+		margin-top: 25px;
+		color: #fff !important;
+	}
+
+	&-slider {
+		margin-top: 25px;
+	}
+
+	&-sliderItem {
+		outline: none;
+	}
+
+	&-image {
+		padding: 30px 0;
+	}
+
+	&-image img {
+		margin: 0 auto;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.CustomersSection {
+		&-title {
+			font-size: 32px;
+		}
+
+		&-sliderItem {
+			font-size: 14px;
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+	.CustomersSection {
+
+		&-title {
+			font-size: 22px;
+		}
+
+		&-subtitle {
+			font-size: 15px;
+		}
+
+		&-slider {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		&-sliderItem {
+			font-size: 14px;
+		}
+
+		&-button {
+			margin-top: 0;
+		}
+	}
+
+}

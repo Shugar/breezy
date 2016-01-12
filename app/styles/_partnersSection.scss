@@ -1,0 +1,51 @@
+.PartnersSection {
+	padding: 120px 0;
+
+	.container {
+		text-align: center;
+		overflow: initial;
+	}
+
+	&-title {
+		text-align: center;
+		font-size: 39px;
+		font-weight: lighter;
+		color: #444;
+	}
+
+	&-hr {
+	    height: 2px;
+	    width: 80px;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    background-color: #00aeff;
+	}
+
+	&-text {
+		color: #777;
+		text-align: center;
+		margin-top: 40px;
+		line-height: 30px;
+	}
+
+	&-button {
+		margin-top: 50px;
+	}
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+	.PartnersSection {
+
+		&-title {
+			font-size: 28px;
+		}
+
+		&-text {
+			font-size: 14px;
+		}
+	}
+
+}

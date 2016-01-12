@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+@import '_normalize';
+@import '_animate';
+@import '_buttonControl';
+// @import '_modal';
+@import '_header';
+@import '_headhesive';
+@import '_headerSection';
+@import '_why';
+@import '_solutionsSection';
+@import '_partnersSection';
+@import '_customers';
+@import '_footer';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    line-height: 1.6;
+    resize: vertical;
+}
+
+p {
+    color: inherit;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-height: 100%;
+    overflow: hidden;
+    max-width: 1260px;
+    width: 100%;
+    text-align: left;
+}
