@@ -12,7 +12,7 @@
 		margin-top: 25px;
 	    width: 80px;
 	    height: 2px;
-	    background-color: #00aeff;
+	    background-color: $blue;
 	}
 
 	&-text {
@@ -25,18 +25,31 @@
 	}
 
 	&-list,
-	&-nexus {
+	&-iphone {
 		display: inline-block;
 		width: 33.33%;
 		vertical-align: top;
+		position: relative;
 	}
 
-	&-nexus > img {
+	&-iphone > img {
 		width: 100%;
 	}
 
+	&-gif {
+		position: absolute;
+	    left: 16%;
+	    top: 12.0%;
+	    width: 68.5% !important;
+	}
+
 	&-listItem {
+		min-height: 207px;
 		margin-bottom: 60px;
+	}
+
+	&-listItem:first-child {
+		min-height: 132px;
 	}
 
 	&-left {
@@ -85,34 +98,21 @@
 	}
 
 	&-icon {
-	    margin-top: 8px;
+	    margin-top: -8px;
 	    color: #777;
 		font-size: 48px;
 	}
 }
 
 
-@media screen and (min-width: 460px) and (max-width: 895px) {
-	.WhySection {
-
-		&-nexus > img {
-			width: auto;
-			max-height: 600px;
-		}
-	}
-}
-
 
 @media screen and (max-width: 895px) {
 	.WhySection {
-		padding: 70px 0;
+		padding: 70px 0 0 0;
 
-		&-nexus {
-			margin-top: -50px;
-		}
 
 		&-list,
-		&-nexus {
+		&-iphone {
 			display: block;
 			width: 100%;
 			text-align: center;
@@ -139,5 +139,34 @@
 			padding-right: 0 !important;
 		}
 
+		&-icon {
+			margin-top: 8px;
+		}
+
+	}
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 895px) {
+	.WhySection {
+		&-iphone {
+			display: block;
+			width: 50%;
+			margin: 0 auto;
+			margin-bottom: 42px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 549px) {
+	.WhySection {
+		&-iphone {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			margin-bottom: 42px;
+			text-align: center;
+		}
 	}
 }

@@ -1,5 +1,5 @@
 .HeaderSection {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 74px);
     min-height: 650px;
     position: relative;
 
@@ -13,7 +13,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: rgba(0, 174, 255, 0.7);
+        background: $blue-header;
     }
 
     &-logo {
@@ -92,12 +92,18 @@
 
 }
 
+@media screen and (max-width: 830px) {
+    .HeaderSection {
+        height: calc(100vh - 56px);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .HeaderSection {
         min-height: 750px;
 
         &-slogan {
-            font-size: 50px;
+            font-size: 44px;
             text-shadow: none;
         }
     }

@@ -13,7 +13,7 @@
 	    height: 2px;
 	    width: 80px;
 	    margin-top: 30px;
-	    background-color: #00aeff;
+	    background-color: $blue;
 	}
 
 	&-listItem {
@@ -23,15 +23,18 @@
 		width: 100%;
 		max-width: 33.33%;
 		padding-right: 20px;
+		position: relative;
+		min-height: 300px;
 	}
 
 	&-listIcon {
 		margin-top: 20px;
-		color: #00aeff;
+		font-size: 38px;
+		color: $blue;
 	}
 
 	&-listTitle {
-		color: #00aeff;
+		color: $blue;
 		font-size: 20px;
 		margin-top: 30px;
 	}
@@ -44,9 +47,10 @@
 	}
 
 	&-listButton {
-		position: relative;
 		display: inline-block;
 		margin-bottom: 0;
+		position: absolute;
+		bottom: 0;
 		background-color: #39b3d7;
 	    border-color: #269abc;
 		color: #fff;
@@ -97,10 +101,15 @@
 			text-align: center;
 			padding-right: 0;
 			margin-top: 50px;
+			min-height: auto;
 		}
 
 		&-listText {
 			padding-right: 0;
+		}
+
+		&-listButton {
+			position: static;
 		}
 
 		&-listIcon {

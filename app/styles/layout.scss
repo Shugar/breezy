@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+@import '_variables';
 @import '_normalize';
 @import '_animate';
 @import '_buttonControl';
@@ -39,6 +40,10 @@ textarea {
 
 p {
     color: inherit;
+}
+
+a {
+    outline: none;
 }
 
 .container {

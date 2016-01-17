@@ -10,24 +10,17 @@ exports.config =
       joinTo: 'stylesheets/app.css'
 
     templates:
-      joinTo: 'javascripts/app.js'
+      joinTo: 'javascripts/app.js': /.+\.jade$/
 
   plugins:
-    jaded:
-      jade:
-        pretty: no
+    jade:
+      pretty: no # Adds pretty-indentation whitespaces to output (false by default)
+
+    static_jade:                        # all optionals
+      extension:  ".static.jade"        # static-compile each file with this extension in `assets`
+      asset:      "app/assets"     # specify the compilation output
 
     postcss:
       processors: [
-        require('autoprefixer')(['> 1%','last 8 versions','ie 9']),
-        require('postcss-flexbugs-fixes'),
-        require('postcss-flexibility')
+        require('autoprefixer')(['> 1%','last 8 versions','ie 9'])
       ]
-
-    babel:
-      presets: ['es2015']
-      ignore: [
-        /^(bower_components|vendor)/
-        'app/legacyES5Code/**/*'
-      ]
-      pattern: /\.(es6|jsx)$/

@@ -7,10 +7,24 @@
     transition: transform 0.3s ease;
 }
 
+.headhesive .Header-nav,
+.headhesive--unstick .Header-links,
 .headhesive--unstick .Header-nav {
-	display: none;
+	display: none !important;
 }
 
 .headhesive--stick {
     transform: translateY(0) translateZ(0);
+}
+
+.headhesive--stick .Header-nav {
+	display: inline-block !important;
+}
+
+@media screen and (max-width: 830px) {
+
+	.headhesive,
+	.headhesive--stick .Header-nav {
+		display: block !important;
+	}
 }
