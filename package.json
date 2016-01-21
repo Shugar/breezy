@@ -20,6 +20,7 @@
     "css-brunch": ">= 1.0 < 1.9",
     "jade-brunch": "latest",
     "javascript-brunch": ">= 1.0 < 1.9",
+    "lodash": "^3.10.1",
     "postcss": "^5.0.14",
     "postcss-brunch": "^0.5.0",
     "sass-brunch": "^1.9.2",

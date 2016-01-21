@@ -1,72 +1,89 @@
+var _ = require('lodash');
+
 $(document).ready ->
-    $('.HeaderSection').vide('video/video_bg.mp4')
+  $('body').removeClass("Preloader-fixed")
+  $('.Preloader').removeClass('Preloader-active')
 
-    $('#myBlock').vide({
-      mp4: 'video_bg.mp4',
-      webm: 'video_bg.webm',
-      ogv: 'video_bg.ogv',
-      poster: 'video_bg.jpg'
-    });
+  $('.HeaderSection').vide('video/video_bg.mp4')
 
-    $('.CustomersSection-slider').slick({
-      arrows: false,
-      fade: true,
-      dots: false,
-    })
+  $('#myBlock').vide({
+    mp4: 'video_bg.mp4',
+    webm: 'video_bg.webm',
+    ogv: 'video_bg.ogv',
+    poster: 'video_bg.jpg'
+  });
 
-    options = {
-      offset: '.WhySection',
-    }
+  $('.CustomersSection-slider').slick({
+    arrows: false,
+    fade: true,
+    dots: false,
+  })
 
-    header = new Headhesive('.Header', options);
+  options = {
+    offset: '.WhySection',
+  }
 
-    checkHasWaypoint = ->
-      if ($('.Header-navItem').hasClass('Header-waypoint'))
-        $('.Header-navItem').removeClass('Header-waypoint')
+  header = new Headhesive('.Header', options);
 
-    scrollToSection = (scroll) ->
-      $("html, body").animate({ scrollTop: $(".#{scroll}").offset().top }, 1000)
+  checkHasWaypoint = ->
+    if ($('.Header-navItem').hasClass('Header-waypoint'))
+      $('.Header-navItem').removeClass('Header-waypoint')
 
-    $('.WhySection').waypoint ->
-      checkHasWaypoint()
-      $('.headhesive .Header-WhySection').addClass('Header-waypoint')
-
-    $('.SolutionsSection').waypoint ->
-      checkHasWaypoint()
-      $('.headhesive .Header-SolutionsSection').addClass('Header-waypoint')
-
-    $('.CustomersSection').waypoint ->
-      checkHasWaypoint()
-      $('.headhesive .Header-CustomersSection').addClass('Header-waypoint')
-
-    $('.PartnersSection').waypoint ->
-      checkHasWaypoint()
-      $('.headhesive .Header-PartnersSection').addClass('Header-waypoint')
+  scrollToSection = (scroll) ->
+    $("html, body").animate({ scrollTop: $(".#{scroll}").offset().top }, 1000)
 
 
-    $('.Header-navItemButton').click ->
-      $('body').addClass('body-fixed')
+  myObject = [
+    '.WhySection',
+    '.SolutionsSection',
+    '.CustomersSection',
+    '.PartnersSection'
+  ]
+
+  _.map [myObject], (n) ->
+    console.log(".#{n}")
+    $(".#{n}").addClass('hui')
+
+  $('.WhySection').waypoint ->
+    checkHasWaypoint()
+    $('.headhesive .Header-WhySection').addClass('Header-waypoint')
+
+  $('.SolutionsSection').waypoint ->
+    checkHasWaypoint()
+    $('.headhesive .Header-SolutionsSection').addClass('Header-waypoint')
+
+  $('.CustomersSection').waypoint ->
+    checkHasWaypoint()
+    $('.headhesive .Header-CustomersSection').addClass('Header-waypoint')
+
+  $('.PartnersSection').waypoint ->
+    checkHasWaypoint()
+    $('.headhesive .Header-PartnersSection').addClass('Header-waypoint')
 
 
-    $('.Header-burger').click ->
-      $('.Header-burger').toggleClass('Header-burgerActive')
-      $('.Header-nav').toggleClass('Header-navActive')
-
-    $('.Header-WhySection').click ->
-      scrollToSection('WhySection')
-
-    $('.Header-SolutionsSection').click ->
-      scrollToSection('SolutionsSection')
-
-    $('.Header-CustomersSection').click ->
-      scrollToSection('CustomersSection')
-
-    $('.Header-PartnersSection').click ->
-      scrollToSection('PartnersSection')
+  $('.Header-navItemButton').click ->
+    $('body').addClass('body-fixed')
 
 
+  $('.Header-burger').click ->
+    $('.Header-burger').toggleClass('Header-burgerActive')
+    $('.Header-nav').toggleClass('Header-navActive')
 
-    $('.Header-navItem').click ->
-      if ($('.Header-links').hasClass('Header-linksActive'))
-        $('.Header-links').removeClass('Header-linksActive')
-      $(this).find('.Header-links').toggleClass('Header-linksActive')
+  $('.Header-WhySection').click ->
+    scrollToSection('WhySection')
+
+  $('.Header-SolutionsSection').click ->
+    scrollToSection('SolutionsSection')
+
+  $('.Header-CustomersSection').click ->
+    scrollToSection('CustomersSection')
+
+  $('.Header-PartnersSection').click ->
+    scrollToSection('PartnersSection')
+
+
+
+  $('.Header-navItem').click ->
+    if ($('.Header-links').hasClass('Header-linksActive'))
+      $('.Header-links').removeClass('Header-linksActive')
+    $(this).find('.Header-links').toggleClass('Header-linksActive')
