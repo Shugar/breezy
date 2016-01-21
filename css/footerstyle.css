@@ -1,0 +1,49 @@
+
+/*----------------------------------------------------------------------------------------
+										FOOTER
+----------------------------------------------------------------------------------------*/
+
+footer {
+	text-align: center;
+	padding: 25px 0px 50px 0px;
+	background: #222;
+	color: #777;
+}
+
+footer .copyright {
+	display: block;
+	margin: 40px 0 0 0;
+}
+
+footer .header {
+	display: block;
+	color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer .logo {
+	margin-top: 100px;
+}
+
+footer .a {
+	color:#132278;
+}
+
+footer .text-left > a {
+	color: #777;
+}
+
+footer .text-left > a:hover {
+	color: #F25A35;
+}
+
+.copyright a {
+	font-weight: bold;
+	color: inherit;
+}
+
+@media (max-width: 992px) {
+
+footer { padding: 80px 0; }
+
+}

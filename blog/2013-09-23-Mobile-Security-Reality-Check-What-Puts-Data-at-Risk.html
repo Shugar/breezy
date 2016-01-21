@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Sep 13 2013 21:40:54 GMT+0000 (UTC) -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Mobile Security Reality Check&#58; What Puts Data at Risk | Secure Mobile Printing from Any Device</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta name="description" content="
+			
+			Breezy: The Mobile Printing Experts -- Secure Mobile Printing from any Device
+			
+		">
+		<meta name="keywords" content="breezy, mobile printing, secure mobile printing, enterprise mobility, emm, mobile, print management, mobile security, managed print services, mps">
+		<link href="/css/normalize.css" rel="stylesheet" type="text/css">
+		<link href="/css/bootstrap.custom.min.css" rel="stylesheet" type="text/css">
+		<link href="/css/webflow.css" rel="stylesheet" type="text/css">
+		<link href="/css/breezy.webflow.css" rel="stylesheet" type="text/css">
+		<script src="https://use.typekit.net/ste5vcu.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		try{Typekit.load();}catch(e){}
+		</script>
+		<link href="http://www.breezy.com/favicon.ico" rel="shortcut icon" type=
+		"image/x-icon">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-24213514-1']);
+			_gaq.push(['_setDomainName', 'breezy.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		<script src="/js/pace.min.js" type="text/javascript"></script>
+		<script defer src="/js/webflow.js" type="text/javascript"></script>
+
+		<script type="text/javascript">(function(){var c=encodeURIComponent,s="SCRIPT",d=document,e=d.createElement(s),t=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||"");e.src="https://api.autopilothq.com/anywhere/58b2a03a347948b399293e1f0b5ec508bb87b75486d64abfa54f479a2c22186c?"+p;e.type="text/javascript";e.async=true;t.parentNode.insertBefore(e, t);})();(function(){var c=encodeURIComponent,s="SCRIPT",d=document,e=d.createElement(s),t=d.getElementsByTagName(s)[0];e.src="https://api.autopilothq.com/anywhere/aa/58b2a03a347948b399293e1f0b5ec508bb87b75486d64abfa54f479a2c22186c";e.type="text/javascript";e.async=false;t.parentNode.insertBefore(e, t);window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}};if(!window.Autopilot) window.Autopilot=window.AutopilotAnywhere;})();</script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">
+				<img alt="breezy-logo.png" src="/images/breezy-logo.png">
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+					<ul class="dropdown-menu">
+						
+						<li>
+							<a href="/products/secure-mobile-printing-for-enterprise.html">Secure Mobile Printing for Enterprise</a>
+						</li>
+
+						<li>
+							<a href="/products/mobile-printing-at-partner-locations.html">On-Location Printing with the Breezy Partner Network</a>
+						</li>
+
+						<li>
+							<a href="/products/email-printing-for-companies.html">Email Printing</a>
+						</li>
+
+						<li> 
+							<a href="/products/secure-mobile-printing-at-home.html">Home and Personal Mobile Printing</a>
+						</li>
+
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">How It Works</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="/architecture/secure-cloud-printing-architecture.html">Architecture</a>
+						</li>
+						<li>
+							<a href="/components/apps.html">Components</a>
+						</li>
+						<li>
+							<a href="/security.html">Security</a>
+						</li>
+					</ul>
+				</li>
+				
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners </a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="/partners/breezy-emm-partners.html">Mobile Security - EMM</a>
+						</li>
+						<li>
+							<a href="/partners/breezy-for-developers.html">Developers</a>
+						</li>
+						<li>
+							<a href="/partners/breezy-partner-network.html">Public Printing Locations</a>
+						</li>
+					</ul>
+				</li>
+
+				<!-- / Unfinished 
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Case Studies </a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="/case-studies/pharmaceutical">Pharma / Medical</a>
+						</li>
+					</ul>
+				</li>
+
+				-->
+
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Industries</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="/industries/finance.html">Finance</a>
+						</li>
+
+						<li>
+							<a href="/industries/legal.html">Legal and Professional Services</a>
+						</li>
+
+						<li>
+							<a href="/industries/government.html">Government</a>
+						</li>
+
+						<li>
+							<a href="/industries/healthcare-and-pharma.html">Healthcare and Pharma</a>
+						</li>
+
+						<li>
+							<a href="/industries/education.html">Education</a>
+						</li>
+
+						<li>
+							<a href="/industries/manufacturing.html">Manufacturing</a>
+						</li>
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="/resources/datasheets.html">Datasheets</a>
+						</li>
+
+						<li>
+							<a href="/resources/videos.html">Videos</a>
+						</li>
+
+						<li>
+							<a href="/resources/other-resources.html">Whitepapers</a>
+						</li>
+
+						<li>
+							<a href="/resources/FAQ.html">FAQ</a>
+						</li>
+						
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us </a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="/about/about-breezy.html">About Breezy</a>
+						</li>
+
+
+						<li>
+							<a href="/about/press.html">Press</a>
+						</li>
+						
+						<li>
+							<a href="/about/media-kit.html">Media Kit</a>
+						</li>
+
+						<li>
+							<a href="http://www.breezy.com/blog" target="blank">Blog</a>
+						</li>	
+
+						<li>
+							<a href="/about/contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a class="" href="http://support.breezy.com/" target="blank">Support</a>
+				</li>
+
+				<li>
+					<a class="cta" href="http://landing.breezy.com/request_a_breezy_demo?ref=navbutton" target="blank">Request a Demo</a>
+				</li>
+
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+		<div class="section-feature">
+			<div class="w-container">
+				<h1 class="feature-headline">Mobile Security Reality Check&#58; What Puts Data at Risk</h1>
+				Posted on September 23, 2013
+				<hr>
+				                   <p><img style="float: right;" id="img-1379975695825" class="alignRight" border="0" alt="Breezy Regular Printing Unlocked Graphic resized 600" src="breezy_regular_printing_unlocked_graphic-resized-600.jpg?t=1441407402588">According to some research, more than 70% of organizations permit use of personally owned<br>devices for business purposes. For most companies, BYOD policies came about<br>when early adopters started bringing iPhones, iPads and Android devices to work<br>and seeking access to the corporate network.</p> 
+                  <!--more-->
+                  <p><a href="http://www.gartner.com/newsroom/id/2466615">Gartner estimated</a>&nbsp;that, by 2017, half of employers will require employees to use their own devices for work. So it seems enterprises have a lot of work to do in the next few years when it<br>comes to practicing safe BYOD. Making every personal device secure can be a daunting task, but, as mobile trends keep gaining momentum, it will become imperative for companies to adapt to changing trends.</p> 
+                  <p>One area of BYOD security that?s often lacking is the area of awareness, education and training for end users. Fewer than 1 in 10 mobile device users know that there are <a href="http://www.securelist.com/en/blog/805/Mobile_attacks">malware<br>apps </a>that don?t attack the infected device, but lie in wait to attack other computers or networks the device subsequently connects to. Even fewer, about 1 in 10,000, realize that many mobile apps are designed with risky behaviors as a core part of the app.</p> 
+                  <p>According to <a href="http://www.networkworld.com/newsletters/techexec/index.html">Network World</a>, at least 80% of mobile apps have built-in security and privacy holes designed into the app. For instance, there?s often a mismatch between the permissions the app requests vs. the permissions the app actually uses, leaving a built-in security hole that<br>hackers can exploit to steal unencrypted data.</p> 
+                  <p>Risky behaviors inherent in mobile apps include:</p> 
+                  <ul> 
+                   <li>Accessing the user contacts on a&nbsp;smartphone&nbsp;(including the contact information that may come from corporate email that syncs to the phone)</li> 
+                   <li>Accessing the user's calendar information</li> 
+                   <li>Collecting or determining the user's location and tracking his movements</li> 
+                   <li>Passing along any or all of this information to ad networks or analytics companies</li> 
+                  </ul> 
+                  <p>According to Network World, 96% of iOS apps and 84% of Android apps can access at least<br>one of these data risk categories.</p> 
+                  <h2>The Hidden Risk: Shortcuts to Get a Job Done</h2> 
+                  <p><img style="float: right;" class="alignRight" border="0" alt="Breezy Secure Mobile Printing Graphic No Breezy Branding" src="breezy_secure_mobile_printing_graphic_no_breezy_branding.jpg?t=1441407402588">But it isn?t just the risky behaviors built into mobile apps that put data at risk. As with any other form of IT security, it?s ordinary human behavior that is the most significant risk. Ask any employee found violating a company security policy why he or she ignored the rules, and there?s a high likelihood that the answer will be, ?I was just trying to do my job.?</p> 
+                  <p>Security experts have long known that if employees can?t access the data they need, or perform the task they need to perform, quickly and easily within approved channels, they?ll do whatever it takes ? in their mind, at that moment ? to get the data and perform the task that they perceive as being important. Mobile printing is a good example of a task that is extremely important in performing a range of jobs that often falls through the cracks of BYOD and mobile security policies.</p> 
+                  <p>Jared Hansen, CEO and co-founder of secure mobile print solutions provider Breezy, says that there are three reasons that mobile print security has been the hidden risk factor for many companies. First, the complexity around integrating a smartphone or tablet to a legacy system like printers has made this space hard to navigate for IT people.</p> 
+                  <p>Second, and perhaps more importantly, ?Silicon Valley pundits have been predicting the<br>paperless office for almost two decades, yet the cost of printing business documents remains the second highest administrative expense (after wages) for many companies,? Hansen points out.</p> 
+                  <p>He says that it was clear very early in the tablet and smartphone revolution that end users wanted to be able to print from their mobile devices, so some manufacturers now ship the devices with a print button built in, allowing the device to send a print job wirelessly to a nearby printer.</p> 
+                  <p>?What?s been forgotten,? Hansen says, ?Is that the security focus needs to shift from the device to the apps that access data ? managing it, transmitting it, and sometimes repackaging it before sharing it.</p> 
+                  <p>?Software companies make money by selling a license to use the software, plus annual renewals or upgrades, and perhaps some services or a support contract. They invest heavily in quality control of their products. If they didn?t, they?d be out of business,? Hansen says.</p> 
+                  <p>It?s different in the world of mobile apps, he points out. ?In the world of mobile apps, there are hundreds of thousands of developers. They put together code quickly to rush the app to market, and they deliver their product free or at very low cost. So there?s a strong incentive for mobile app developers to reuse and repurpose code, and to collect as much data as possible that can be shared with ad networks and third parties. And that?s a problem for enterprises that<br>need to protect sensitive data.</p> 
+                  <p>?Small development shops or start-ups in search of revenue don't necessarily wait for permission to collect data. Even when I deny an app permission to access my location information, the app can figure it out using geo-IP tracking, cell phone triangulation or Wi-Fi network recognition. Sometimes the user agreement that users accept (and hardly ever read) when downloading an app grants permission to collect and share data beyond that particular app. People don?t realize that the app may have code from ad networks or analytic frameworks built in ? and that permission given to one app may be grandfathered to those third parties we<br>well.</p> 
+                  <p>?If I sync my work email with my smartphone, my work contact list can be sent outside the company without anyone knowing,? Hansen adds. Another risky behavior associated with mobile devices is the so-called background permission. A lot of mobile apps say they are going to work in the background.</p> 
+                  <p>?What that really means is that they are on all the time, and therefore collect data all the time ? even when the user isn?t using the app,? Hansen says. ?This is why on-device encryption is an increasingly important part of any secure mobile print solution,? he adds. Every document printed with Breezy is encrypted on the mobile device using public key encryption before it is<br>submitted for printing, regardless of what app is being used to access the data.</p>
+                 </div></span> 
+               
+              </div>
+
+			</div>
+		</div>
+		
+		<!-- Gradient -->
+<div class="section-gradient">
+	<div class="w-container feature-central">
+		<h1 class="feature-headline central white">Easy to deploy and manage</h1>
+	</div>
+
+	<div class="w-container">
+		<div class="w-row feature-central">
+			<div class="w-col w-col-1"></div>
+
+			<div class="w-col w-col-10">
+				<p class="feature-body white">Customers report that Breezy installations are among the easiest they’ve ever seen for an enterprise product.</p>
+				<p/>
+			</div>
+
+			<div class="w-col w-col-1"></div>
+		</div>
+
+		<div class="w-row">
+			<div class="w-col w-col-4"></div>
+
+			<div class="w-col w-col-4">
+				<a class="button cta orange" href="http://landing.breezy.com/request_a_breezy_demo" target="blank">Request a Demo</a>
+			</div>
+
+			<div class="w-col w-col-4"></div>
+		</div>
+	</div>
+</div>
+<!-- End Gradient -->
+		<!-- FOOTER BEGIN -->
+<footer id="footer">
+	<div class="container">
+		<div class="col-md-3 align-left">
+			<p class="text-left header">Learn More</p>
+			<p class="text-left">
+				<a href="http://www.breezy.com/security.html">Breezy Security</a><br>
+				<a href="http://www.breezy.com/architecture/secure-cloud-printing-architecture.html">Secure Cloud Printing</a><br>
+				<a href="http://www.breezy.com/architecture/on-premise-mobile-printing-for-enterprise.html">On-Premise Deployments</a><br>
+				<a href="http://landing.breezy.com/Secure_Easy_Printing_with_AirWatch">Secure Printing for AirWatch</a><br>
+				<!-- <a href="">Secure Printing for Citrix</a><br> -->
+				<a href="http://landing.breezy.com/Printing_with_Good_Dynamics_Technology">Secure Printing for Good Technology</a><br>
+				<a href="http://landing.breezy.com/Printing_with_MobileIron_AppConnect">Secure Printing for MobileIron</a><br>
+				<a href="http://www.breezy.com/products/email-printing-for-companies.html">Email Printing</a><br>
+			</p>
+		</div>
+		<div class="col-md-3 align-left">
+			<p class="text-left header">Industries</p>
+			<p class="text-left">
+				<a href="http://www.breezy.com/industries/finance.html">Banking and Finance</a><br>
+				<a href="http://www.breezy.com/industries/legal.html">Legal & Professional Services</a><br>
+				<!-- <a href="">Hospitality</a><br> -->
+				<a href="http://www.breezy.com/industries/government.html">Government</a><br>
+				<a href="http://www.breezy.com/industries/healthcare-and-pharma.html">Healthcare and Pharma</a><br>
+				<a href="http://www.breezy.com/industries/education.html">Education</a><br>
+				<!-- <a href="">Retail</a><br> -->
+				<a href="http://www.breezy.com/industries/manufacturing.html">Manufacturing</a><br>
+			</p>
+		</div>
+		<div class="col-md-3 align-left">
+			<p class="text-left header">Resources</p>
+			<p class="text-left">
+				<a href="http://landing.breezy.com/definitive-guide-to-mobile-printing" target="new">Definitive Guide to Mobile Printing</a><br>
+				<!-- <a href="">S.A.F.E. Printing Checklist</a><br> -->
+				<!-- <a href="">ROI Calculator</a><br> -->
+				<!-- <a href="">Case Studies</a><br> -->
+				<a href="http://www.breezy.com/resources/datasheets.html">Datasheets</a><br>
+				<a href="http://www.breezy.com/resources/other-resources.html">Whitepapers</a><br>
+				<a href="http://www.breezy.com/resources/videos.html">Videos</a><br>
+				<a href="http://www.breezy.com/resources/FAQ.html">FAQ</a><br>
+				<a href="http://www.breezy.com/partners/breezy-for-developers.html">For Developers</a><br>
+			</p>
+		</div>
+		<div class="col-md-3 align-left">
+			<p class="text-left header">Contact & Info</p>
+			<p class="text-left">
+				<a href="http://www.breezy.com/about/about-breezy.html">About Us</a><br>
+				<a href="http://www.breezy.com/blog/">Blog</a><br>
+				<a href="http://www.breezy.com/about/press.html">Press</a><br>
+				<!-- <a href="http://www.breezy.com/about/careers.html">Careers</a><br> -->
+				<a href="https://support.breezy.com">Support</a><br>
+				<a href="http://www.breezy.com/about/contact.html">Contact Us</a><br>
+			</p>
+		</div>
+	</div>
+	<div class="container">
+		<hr>
+		<div class="text-left">
+				<a href="http://www.twitter.com/breezy"><i class="icon icon-social-twitter"></i>&nbsp;&nbsp;Twitter</a>&nbsp;
+				<a href="https://www.youtube.com/channel/UCGMsUhpoE049tcayCHWCFEA"><i class="icon icon-social-youtube"></i>&nbsp;Youtube</a>&nbsp;
+				<a href="https://www.linkedin.com/company/2168856"><i class="icon icon-social-linkedin"></i>&nbsp;LinkedIn</a>&nbsp;
+		</div>
+		<div class="copyright">
+			<a href="index.html#wrap"><img src="/images/logo-white.png" alt="Breezy Logo" height="75" /></a><br><br>
+			&copy; 2016 BreezyPrint Corporation. All rights reserved.<br/>Certain aspects of Breezy's products protected by US Patent No. 9,019,535 and other pending patents.
+		</div>
+	</div>
+</footer>
+<!-- FOOTER END -->
+	</body>
+</html>
