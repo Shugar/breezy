@@ -147,9 +147,6 @@
         background: $blue;
     }
 
-     &-navActive {
-        transform: translateY(0) !important;
-    }
 }
 
 
@@ -185,16 +182,20 @@
             display: none !important;
         }
 
+        &-navActive {
+           transform: translateY(0) !important;
+        }
+
+        &-linksActive {
+            display: block !important;
+        }
+
         &-links {
             position: static;
             width: 100%;
             text-align: center;
         }
     }
-}
-
-.Header-linksActive {
-    display: block !important;
 }
 
 @media screen and (max-width: 1000px) {
