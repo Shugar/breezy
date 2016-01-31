@@ -321,14 +321,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-/* line 11, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 1, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 article,
 aside,
 details,
@@ -343,128 +336,70 @@ section,
 summary {
   display: block; }
 
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-/* line 30, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 16, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 audio,
 canvas,
 video {
   display: inline-block; }
 
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 41, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 22, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 50, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 27, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 [hidden] {
   display: none; }
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 64, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 31, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 html {
   font-family: sans-serif;
-  /* 1 */
   -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  -webkit-text-size-adjust: 100%; }
 
-/**
- * Remove default margin.
- */
-/* line 74, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 37, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 body {
   margin: 0; }
 
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-/* line 86, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 41, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 a:focus {
   outline: thin dotted; }
 
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-/* line 94, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 45, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 a:active,
 a:hover {
   outline: 0; }
 
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 108, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 50, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 117, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 55, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 125, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 59, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 b,
 strong {
   font-weight: bold; }
 
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 134, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 64, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 dfn {
   font-style: italic; }
 
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 142, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 68, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 hr {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   height: 0; }
 
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 152, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 74, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 mark {
   background: #ff0;
   color: #000; }
 
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-/* line 161, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 79, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 code,
 kbd,
 pre,
@@ -472,31 +407,19 @@ samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-/* line 173, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 87, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 pre {
   white-space: pre-wrap; }
 
-/**
- * Set consistent quote types.
- */
-/* line 181, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 91, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 189, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 95, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 small {
   font-size: 80%; }
 
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 197, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 99, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -504,188 +427,99 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 205, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 107, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 sup {
   top: -0.5em; }
 
-/* line 209, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 111, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-/* line 221, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 115, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 img {
   border: 0; }
 
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-/* line 229, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 119, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-/* line 241, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 123, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 figure {
   margin: 0; }
 
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-/* line 253, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 127, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 264, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 133, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 legend {
   border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
+  padding: 0; }
 
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 275, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 138, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 button,
 input,
 select,
 textarea {
   font-family: inherit;
-  /* 1 */
   font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */ }
+  margin: 0; }
 
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 289, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 147, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 button,
 input {
   line-height: normal; }
 
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-/* line 301, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 152, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 button,
 select {
   text-transform: none; }
 
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-/* line 314, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 157, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
+  cursor: pointer; }
 
-/**
- * Re-set default cursor for disabled elements.
- */
-/* line 326, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 165, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
 
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- */
-/* line 336, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 170, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
+  padding: 0; }
 
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-/* line 348, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 176, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
-  /* 1 */
   -webkit-box-sizing: content-box;
-  /* 2 */
   box-sizing: content-box; }
 
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-/* line 360, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 183, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-/* line 369, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 188, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-/* line 380, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 194, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 textarea {
   overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */ }
+  vertical-align: top; }
 
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-/* line 393, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
+/* line 199, /Users/tumasov/Developer/breezy/app/styles/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -3209,10 +3043,10 @@ table {
     transition: color 0.3s ease;
     color: #777;
     cursor: pointer; }
-  /* line 47, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 46, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-navItem:last-child {
     cursor: initial; }
-  /* line 51, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 50, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-navItem > a {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -3221,13 +3055,13 @@ table {
     position: absolute;
     left: 0;
     top: 0; }
-  /* line 60, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 59, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-navItem:hover {
     color: #00aeff; }
-  /* line 64, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 63, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-navItem:hover .Header-links {
     display: block; }
-  /* line 68, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 67, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-links {
     position: absolute;
     top: 62px;
@@ -3237,7 +3071,7 @@ table {
     opacity: 1;
     z-index: 15;
     text-align: left; }
-  /* line 79, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 78, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-link {
     display: block;
     background: #fff;
@@ -3250,19 +3084,19 @@ table {
     height: 100%;
     -webkit-transition: border-bottom 0.2s ease;
     transition: border-bottom 0.2s ease; }
-  /* line 92, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 91, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-link:hover {
     border-bottom: 1px #00aeff solid; }
-  /* line 96, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 95, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-waypoint {
     color: #00aeff; }
-  /* line 100, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 99, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-waypoint:after {
     opacity: 1; }
-  /* line 104, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 103, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-resourcesWaypoint {
     display: none; }
-  /* line 108, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 107, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-button {
     position: relative;
     padding: 10px 15px;
@@ -3272,42 +3106,42 @@ table {
     background-color: #E84D23;
     -webkit-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease; }
-  /* line 118, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 117, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-button:hover {
     background-color: #FF4C23; }
-  /* line 122, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 121, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-button a {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%; }
-  /* line 130, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 129, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-burger {
     position: absolute;
     display: none;
     cursor: pointer;
     right: 30px;
     top: 24px; }
-  /* line 138, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 137, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-burgerLine {
     width: 22px;
     height: 1px;
     margin-top: 3px;
     background: #999;
     margin: 0 0 6px 0; }
-  /* line 146, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 145, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-burgerActive .Header-burgerLine {
     background: #00aeff; }
 
 @media screen and (max-width: 830px) {
-  /* line 156, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 153, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-burger {
     display: inline-block; }
-  /* line 160, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 157, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-logo {
     padding: 10px 0 5px 30px; }
-  /* line 164, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 161, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-nav {
     max-width: 100%;
     position: absolute;
@@ -3317,32 +3151,32 @@ table {
     -webkit-transform: translateY(-150%);
         -ms-transform: translateY(-150%);
             transform: translateY(-150%); }
-  /* line 173, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 170, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-navItem {
     display: block;
     width: 100%;
     text-align: center;
     background: #fff;
     border-bottom: 1px #eee solid; }
-  /* line 181, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 178, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-links {
     display: none !important; }
-  /* line 185, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 182, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-navActive {
     -webkit-transform: translateY(0) !important;
         -ms-transform: translateY(0) !important;
             transform: translateY(0) !important; }
-  /* line 189, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 186, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-linksActive {
     display: block !important; }
-  /* line 193, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 190, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-links {
     position: static;
     width: 100%;
     text-align: center; } }
 
 @media screen and (max-width: 1000px) {
-  /* line 203, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
+  /* line 200, /Users/tumasov/Developer/breezy/app/styles/_header.scss */
   .Header-navItem {
     padding: 18px 10px 16px 10px; } }
 
@@ -3389,7 +3223,7 @@ table {
   /* line 6, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection .container {
     text-align: center; }
-  /* line 11, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 10, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-background {
     position: absolute;
     top: 0;
@@ -3397,13 +3231,13 @@ table {
     left: 0;
     bottom: 0;
     background: rgba(0, 174, 255, 0.7); }
-  /* line 20, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 19, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-logo {
     background: url("../images/logo-big.svg") no-repeat center center;
     background-size: contain;
     height: 200px;
     margin-top: 100px; }
-  /* line 27, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 26, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-slogan {
     color: #fff;
     line-height: 1.25;
@@ -3414,14 +3248,14 @@ table {
     max-width: 560px;
     margin: 0 auto;
     margin-top: 50px; }
-  /* line 39, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 38, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttons {
     margin-top: 50px; }
-  /* line 43, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 42, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsItem, .HeaderSection-buttonsIcon, .HeaderSection-buttonsText {
     display: inline-block;
     vertical-align: middle; }
-  /* line 50, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 49, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsItem {
     background: rgba(255, 255, 255, 0.85);
     padding: 15px 30px 14px 25px;
@@ -3430,62 +3264,62 @@ table {
     -webkit-transition: background 0.4s ease;
     transition: background 0.4s ease;
     position: relative; }
-  /* line 59, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 58, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsItem:hover {
     background: white; }
-  /* line 63, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 62, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsItem > a {
     height: 100%;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0; }
-  /* line 71, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 70, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsItem:last-child {
     color: #669900; }
-  /* line 75, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 74, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsIcon {
     margin-right: 10px; }
-  /* line 79, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 78, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsIcon > img {
     max-height: 32px; }
-  /* line 83, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 82, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsTextTitle {
     font-size: 12px;
     font-weight: 300; }
-  /* line 88, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 87, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection-buttonsTextSubtitle {
     font-size: 20px;
     line-height: 20px;
     font-weight: 700; }
 
 @media screen and (max-width: 830px) {
-  /* line 97, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 96, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection {
     height: -webkit-calc(100vh - 56px);
     height: calc(100vh - 56px); } }
 
 @media screen and (max-width: 768px) {
-  /* line 103, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 102, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection {
     min-height: 750px; }
-    /* line 106, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+    /* line 105, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
     .HeaderSection-slogan {
       font-size: 44px;
       text-shadow: none; } }
 
 @media screen and (max-width: 445px) {
-  /* line 114, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+  /* line 113, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
   .HeaderSection {
     min-height: 650px; }
-    /* line 118, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+    /* line 116, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
     .HeaderSection-logo {
       height: 160px; }
-    /* line 122, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+    /* line 120, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
     .HeaderSection-slogan {
       font-size: 28px;
       text-shadow: none; }
-    /* line 127, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
+    /* line 125, /Users/tumasov/Developer/breezy/app/styles/_headerSection.scss */
     .HeaderSection-buttonsItem:last-child {
       margin-top: 15px; } }
 
@@ -3608,7 +3442,7 @@ table {
       margin-top: 8px; } }
 
 @media screen and (min-width: 550px) and (max-width: 895px) {
-  /* line 152, /Users/tumasov/Developer/breezy/app/styles/_why.scss */
+  /* line 151, /Users/tumasov/Developer/breezy/app/styles/_why.scss */
   .WhySection-iphone {
     display: block;
     width: 50%;
@@ -3617,7 +3451,7 @@ table {
     text-align: center; } }
 
 @media screen and (max-width: 549px) {
-  /* line 164, /Users/tumasov/Developer/breezy/app/styles/_why.scss */
+  /* line 163, /Users/tumasov/Developer/breezy/app/styles/_why.scss */
   .WhySection-iphone {
     display: block;
     width: 80%;

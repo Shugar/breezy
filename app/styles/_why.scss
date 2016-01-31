@@ -8,11 +8,11 @@
 	}
 
 	&-hr {
-	    margin: 0 auto;
+    margin: 0 auto;
 		margin-top: 25px;
-	    width: 80px;
-	    height: 2px;
-	    background-color: $blue;
+    width: 80px;
+    height: 2px;
+    background-color: $blue;
 	}
 
 	&-text {
@@ -38,9 +38,9 @@
 
 	&-gif {
 		position: absolute;
-	    left: 16%;
-	    top: 12.0%;
-	    width: 68.5% !important;
+    left: 16%;
+    top: 12.0%;
+    width: 68.5% !important;
 	}
 
 	&-listItem {
@@ -53,7 +53,7 @@
 	}
 
 	&-left {
-	    text-align: right;
+    text-align: right;
 	}
 
 	&-left &-listTextTitle {
@@ -98,8 +98,8 @@
 	}
 
 	&-icon {
-	    margin-top: -8px;
-	    color: #777;
+    margin-top: -8px;
+    color: #777;
 		font-size: 48px;
 	}
 }
@@ -142,7 +142,6 @@
 		&-icon {
 			margin-top: 8px;
 		}
-
 	}
 }
 

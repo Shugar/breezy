@@ -1,10 +1,10 @@
 .headhesive,
 .headhesive--unstick {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transform: translateY(-100%) translateZ(0);
-    transition: transform 0.3s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transform: translateY(-100%) translateZ(0);
+  transition: transform 0.3s ease;
 }
 
 .headhesive .Header-nav,

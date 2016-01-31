@@ -1,85 +1,85 @@
 .Footer {
-    padding: 25px 0px 50px 0px;
-    background: #222;
+  padding: 25px 0px 50px 0px;
+  background: #222;
+  color: #777;
+
+  &-listItem {
+    display: inline-block;
+  	vertical-align: top;
+  	width: 25%;
+  	padding: 0 15px;
+  }
+
+  &-listItem:first-child {
+  	padding-left: 0;
+  }
+
+  &-listTitle {
+  	color: #f2f2f2;
+  	font-weight: 700;
+  	margin-bottom: 10px;
+  }
+
+  &-listLink > a {
+    font-size: 16px;
+    font-weight: 300;
     color: #777;
+    transition: color 0.3s ease;
+    line-height: 1.6;
+  }
 
-    &-listItem {
-    	display: inline-block;
-    	vertical-align: top;
-    	width: 25%;
-    	padding: 0 15px;
-    }
+  &-listLink > a:hover {
+  	color: #F25A35;
+  }
 
-    &-listItem:first-child {
-    	padding-left: 0;
-    }
+  &-socials {
+    text-align: right;
+  }
 
-    &-listTitle {
-    	color: #f2f2f2;
-    	font-weight: 700;
-    	margin-bottom: 10px;
-    }
+  &-social {
+  	display: inline-block;
+  	vertical-align: top;
+  	padding: 0 0 0 25px;
+  	margin-top: 20px;
+  }
 
-    &-listLink > a {
-	    font-size: 16px;
-	    font-weight: 300;
-	    color: #777;
-	    transition: color 0.3s ease;
-	    line-height: 1.6;
-    }
+  &-hr {
+  	margin-top: 25px;
+  	border: 0;
+  	border-top: 1px solid #eee;
+  }
 
-    &-listLink > a:hover {
-    	color: #F25A35;
-    }
+  &-logo {
+  	margin-top: 40px;
+  	text-align: center;
+  }
 
-    &-socials {
-        text-align: right;
-    }
+  &-logo img {
+  	height: 75px;
+  }
 
-    &-social {
-    	display: inline-block;
-    	vertical-align: top;
-    	padding: 0 0 0 25px;
-    	margin-top: 20px;
-    }
-
-    &-hr {
-    	margin-top: 25px;
-    	border: 0;
-    	border-top: 1px solid #eee;
-    }
-
-    &-logo {
-    	margin-top: 40px;
-    	text-align: center;
-    }
-
-    &-logo img {
-    	height: 75px;
-    }
-
-    &-copyright {
-    	text-align: center;
-    	margin-top: 25px;
-    }
+  &-copyright {
+  	text-align: center;
+  	margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .Footer {
-        &-listItem {
-            width: 50%;
-            padding: 0;
-            margin-bottom: 25px;
-        }
+  .Footer {
+    &-listItem {
+      width: 50%;
+      padding: 0;
+      margin-bottom: 25px;
     }
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .Footer {
-        &-listItem {
-            width: 100%;
-            padding: 0;
-            margin-bottom: 25px;
-        }
+  .Footer {
+    &-listItem {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 25px;
     }
+  }
 }
