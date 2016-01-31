@@ -1,6 +1,5 @@
 .CustomersSection {
-	background-color: #45474D;
-	color: #ffffff;
+	background: #fff;
 	padding: 60px 0;
 
 	.container {
@@ -16,28 +15,32 @@
 	}
 
 	&-subtitle {
-		margin-top: 5px;
+		margin-top: 15px;
 	}
 
 	&-button {
-		margin-top: 25px;
-		color: #fff !important;
+		margin-top: 15px;
 	}
 
-	&-slider {
-		margin-top: 25px;
+	&-logos {
+		margin-top: 35px;
+		background: #fff;
+		padding: 0 30px;
+		text-align: center;
 	}
 
-	&-sliderItem {
-		outline: none;
+	&-logosItem {
+		display: inline-block;
+		vertical-align: middle;
+    padding: 25px 50px;
 	}
 
-	&-image {
-		padding: 30px 0;
+	&-logosItem:last-child {
+    padding-left: 38px;
 	}
 
-	&-image img {
-		margin: 0 auto;
+	&-logosItem > img {
+		height: 50px;
 	}
 }
 
@@ -48,12 +51,7 @@
 		&-title {
 			font-size: 32px;
 		}
-
-		&-sliderItem {
-			font-size: 14px;
-		}
 	}
-
 }
 
 
@@ -70,17 +68,16 @@
 			font-size: 15px;
 		}
 
-		&-slider {
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
-
-		&-sliderItem {
-			font-size: 14px;
-		}
-
 		&-button {
 			margin-top: 0;
+		}
+
+		&-logosItem {
+	    padding: 25px 10px;
+		}
+
+		&-logosItem:last-child {
+			padding-left: 10px;
 		}
 	}
 

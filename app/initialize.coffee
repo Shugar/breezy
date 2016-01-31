@@ -11,7 +11,7 @@ $(document).ready ->
     arrows: false,
     fade: true,
     dots: false,
-  })
+  });
 
   options = {
     offset: '.WhySection',
@@ -26,19 +26,7 @@ $(document).ready ->
   $('.Header-burger').click ->
     $('.Header-burger').toggleClass('Header-burgerActive')
     $('.Header-nav').toggleClass('Header-navActive')
-
-  # getWidth = ->
-  #   $(window).width()
-  #
-  # $(window).on 'resize', ->
-  #   checkHasWaypoint('links', 'linksActive')
-  #
-  #   if (getWidth() <= 830)
-  #     $('.Header-navItem').click ->
-  #       checkHasWaypoint('links', 'linksActive')
-  #       $(this).find('.Header-links').toggleClass('Header-linksActive')
-
-
+    
   $('.Header-navItem').click ->
     checkHasWaypoint('links', 'linksActive')
     $(this).find('.Header-links').toggleClass('Header-linksActive')

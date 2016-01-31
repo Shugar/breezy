@@ -1,5 +1,5 @@
 .PartnersSection {
-	padding: 120px 0;
+	padding: 20px 0 120px 0;
 
 	.container {
 		text-align: center;
@@ -28,8 +28,18 @@
 		line-height: 30px;
 	}
 
-	&-button {
-		margin-top: 50px;
+	&-image {
+		padding: 15px 0 25px 0;
+	}
+
+	&-imageItem {
+		display: inline-block;
+		padding: 25px 10px;
+	}
+
+	&-imageItem > img {
+		max-height: 95px;
+		padding: 25px 25px 0 25px;
 	}
 
 }
@@ -45,6 +55,11 @@
 
 		&-text {
 			font-size: 14px;
+		}
+
+		&-imageItem > img {
+	    max-height: 55px;
+	    padding: 0;
 		}
 	}
 
